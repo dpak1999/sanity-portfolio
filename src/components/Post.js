@@ -1,7 +1,6 @@
 /** @format */
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { post } from "request";
 import sanityClient from "../client";
 
 const Post = () => {
