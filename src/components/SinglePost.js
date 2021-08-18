@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import sanityClient from "../client";
+import Loader from "./Loader";
 
 const SinglePost = () => {
   const [singlePost, setSinglePost] = useState(null);
@@ -39,7 +40,7 @@ const SinglePost = () => {
       .catch(console.error);
   }, [slug]);
 
-  if (!singlePost) return <div>No posts found</div>;
+  if (!singlePost) return <Loader />;
 
   return (
     <main className="bg-gray-200 min-h-screen p-12">
