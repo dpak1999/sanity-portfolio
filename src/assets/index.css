@@ -9939,6 +9939,14 @@ video {
   animation: bounce 1s infinite;
 }
 
+.animate-bounce200{
+  animation: bounce 1s infinte 200ms;
+}
+
+.animate-bounce400{
+  animation: bounce 1s infinte 400ms;
+}
+
 .cursor-auto{
   cursor: auto;
 }
@@ -39200,6 +39208,14 @@ video {
     animation: bounce 1s infinite;
   }
 
+  .sm\:animate-bounce200{
+    animation: bounce 1s infinte 200ms;
+  }
+
+  .sm\:animate-bounce400{
+    animation: bounce 1s infinte 400ms;
+  }
+
   .sm\:cursor-auto{
     cursor: auto;
   }
@@ -68432,6 +68448,14 @@ video {
 
   .md\:animate-bounce{
     animation: bounce 1s infinite;
+  }
+
+  .md\:animate-bounce200{
+    animation: bounce 1s infinte 200ms;
+  }
+
+  .md\:animate-bounce400{
+    animation: bounce 1s infinte 400ms;
   }
 
   .md\:cursor-auto{
@@ -97668,6 +97692,14 @@ video {
     animation: bounce 1s infinite;
   }
 
+  .lg\:animate-bounce200{
+    animation: bounce 1s infinte 200ms;
+  }
+
+  .lg\:animate-bounce400{
+    animation: bounce 1s infinte 400ms;
+  }
+
   .lg\:cursor-auto{
     cursor: auto;
   }
@@ -126902,6 +126934,14 @@ video {
     animation: bounce 1s infinite;
   }
 
+  .xl\:animate-bounce200{
+    animation: bounce 1s infinte 200ms;
+  }
+
+  .xl\:animate-bounce400{
+    animation: bounce 1s infinte 400ms;
+  }
+
   .xl\:cursor-auto{
     cursor: auto;
   }
@@ -156134,6 +156174,14 @@ video {
 
   .\32xl\:animate-bounce{
     animation: bounce 1s infinite;
+  }
+
+  .\32xl\:animate-bounce200{
+    animation: bounce 1s infinte 200ms;
+  }
+
+  .\32xl\:animate-bounce400{
+    animation: bounce 1s infinte 400ms;
   }
 
   .\32xl\:cursor-auto{

@@ -1,6 +1,7 @@
 /** @format */
 import { useState, useEffect } from "react";
 import sanityClient from "../client";
+import Loader from "./Loader";
 
 const Project = () => {
   const [projects, setProjects] = useState(null);
@@ -25,6 +26,8 @@ const Project = () => {
   useEffect(() => {
     getDataFromSanity();
   }, []);
+
+  if (!projects) return <Loader />;
 
   return (
     <main className="bg-green-100 min-h-screen p-12">

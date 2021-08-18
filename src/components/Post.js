@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client";
+import Loader from "./Loader";
 
 const Post = () => {
   const [postData, setPostData] = useState(null);
@@ -27,6 +28,8 @@ const Post = () => {
   useEffect(() => {
     getDataFromSanity();
   }, []);
+
+  if (!postData) return <Loader />;
 
   return (
     <main className="bg-green-100 min-h-screen p-12">
